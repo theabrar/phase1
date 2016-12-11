@@ -11,7 +11,7 @@ public class TestInitialization {
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 	}
-
+//
 	public void closeSession() {
 		driver.quit();
 	}
