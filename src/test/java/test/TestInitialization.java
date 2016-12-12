@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestInitialization {
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	public void startSession() {
 		System.setProperty("webdriver.gecko.driver",

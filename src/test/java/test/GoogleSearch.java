@@ -32,10 +32,9 @@ public class GoogleSearch extends TestInitialization {
 	public void testSearch() throws Exception {
 		try {
 			driver.get("http://www.google.co.uk");
-			//Driver not getting initialized properly - Require investigation
-			//cmnObj.cmnWaitFluently("//div[@id='hplogo']", 20);
+			cmnObj.cmnWaitFluently("//div[@id='hplogo']", 20);
 			
-			//Assert.assertTrue(pgObj.initElements().googleLogo.isDisplayed());
+			Assert.assertTrue(pgObj.initElements().googleLogo.isDisplayed());
 			Thread.sleep(10000);
 
 		} catch (Exception e) {
