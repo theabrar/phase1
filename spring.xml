@@ -10,17 +10,6 @@
     
    <!--  <bean id="triangle" class="org.shafi.Spring.Triangle"/> -->
     
-    <!-- <bean id="loginBean" class="com.outlook.login.LoginObject" scope="prototype">
-        <property name="loginobj">
-            <list>
-                <bean class="com.outlook.login.LoginObject">
-                    <property name="username" value="mshafi@outlook.com"/>
-                    <property name="password" value="hajazareena043"/>
-                    <property name="submit" value="true"/>
-                    <property name="keepme" value="false"/>
-                </bean>
-            </list>
-        </property>
-    </bean>   -->
+   
         
     </beans>
