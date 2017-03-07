@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68581" started-at="2016-12-12T20:29:56Z" finished-at="2016-12-12T20:31:05Z">
+  <suite name="Default suite" duration-ms="21641" started-at="2017-03-07T22:37:47Z" finished-at="2017-03-07T22:38:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="68581" started-at="2016-12-12T20:29:56Z" finished-at="2016-12-12T20:31:05Z">
+    <test name="Default test" duration-ms="21641" started-at="2017-03-07T22:37:47Z" finished-at="2017-03-07T22:38:09Z">
       <class name="test.GoogleSearch">
-        <test-method status="PASS" signature="startSession()[pri:0, instance:test.GoogleSearch@769f71a9]" name="startSession" is-config="true" duration-ms="8033" started-at="2016-12-12T20:29:56Z" finished-at="2016-12-12T20:30:04Z">
+        <test-method status="PASS" signature="startSession()[pri:0, instance:test.GoogleSearch@cb5822]" name="startSession" is-config="true" duration-ms="8290" started-at="2017-03-07T22:37:47Z" finished-at="2017-03-07T22:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="testSearch()[pri:0, instance:test.GoogleSearch@769f71a9]" name="testSearch" duration-ms="59563" started-at="2016-12-12T20:30:04Z" finished-at="2016-12-12T20:31:04Z">
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:test.GoogleSearch@cb5822]" name="testSearch" duration-ms="12250" started-at="2017-03-07T22:37:56Z" finished-at="2017-03-07T22:38:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearch -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:test.GoogleSearch@769f71a9]" name="closeSession" is-config="true" duration-ms="903" started-at="2016-12-12T20:31:04Z" finished-at="2016-12-12T20:31:05Z">
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:test.GoogleSearch@cb5822]" name="closeSession" is-config="true" duration-ms="1074" started-at="2017-03-07T22:38:08Z" finished-at="2017-03-07T22:38:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->

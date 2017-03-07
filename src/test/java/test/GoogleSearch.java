@@ -1,17 +1,14 @@
 package test;
+import static beans.GetBeanGlobal.gloObj;
+import static beans.GetBeanStartSession.driver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import common.CommonObject;
-
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GoogleSearch extends TestInitialization {
 
-	CommonObject cmnObj = new CommonObject();
 	PageObject pgObj = new PageObject();
 
 	@BeforeMethod
@@ -32,7 +29,8 @@ public class GoogleSearch extends TestInitialization {
 	public void testSearch() throws Exception {
 		try {
 			driver.get("http://www.google.co.uk");
-			cmnObj.cmnWaitFluently("//div[@id='hplogo']", 20);
+			gloObj().gloWaitFluently("//div[@id='hplogo']", 20);
+			System.out.println("Waited for 20 secs");
 			
 			Assert.assertTrue(pgObj.initElements().googleLogo.isDisplayed());
 			Thread.sleep(10000);

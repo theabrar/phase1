@@ -1,18 +1,16 @@
 package test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
+import beans.GetBeanGlobal;
+import beans.GetBeanStartSession;
 
 public class TestInitialization {
-	public static WebDriver driver;
 
 	public void startSession() {
-		System.setProperty("webdriver.gecko.driver",
-				"C://Users//Matrix//Downloads//geckodriver-win64//geckodriver.exe");
-		driver = new FirefoxDriver();
-		driver.manage().window().maximize();
+		GetBeanGlobal.GetGlobalBean();
+		GetBeanStartSession.startSessionBean();
 	}
-//
+
 	public void closeSession() {
-		driver.quit();
+		GetBeanStartSession.driver().quit();
 	}
 }

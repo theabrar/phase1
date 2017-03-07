@@ -1,17 +1,16 @@
-package common;
+package global;
 import test.TestInitialization;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static beans.GetBeanStartSession.driver;
 
-public class CommonObject extends TestInitialization{
-	//public static WebDriver driver;
+public class GlobalObject extends TestInitialization implements GlobalInterface{
 	
-	public void cmnWaitFluently(String xpath, int seconds) throws Exception{
+	public void gloWaitFluently(String xpath, int seconds) throws Exception{
 		try{
 			new WebDriverWait(driver, seconds).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		}catch(Exception e){
@@ -19,7 +18,7 @@ public class CommonObject extends TestInitialization{
 		}
 	}
 
-	public void cmnWaitFluentlyForElement(WebElement element, int seconds) throws InterruptedException{
+	public void gloWaitFluentlyForElement(WebElement element, int seconds) throws InterruptedException{
 		new WebDriverWait(driver, seconds).until(ExpectedConditions.visibilityOf(element));
 	}
 }
