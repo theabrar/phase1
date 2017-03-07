@@ -9,7 +9,5 @@
 	xmlns:context="http://www.springframework.org/schema/context">
     
    <!--  <bean id="triangle" class="org.shafi.Spring.Triangle"/> -->
-    
-   
         
     </beans>
